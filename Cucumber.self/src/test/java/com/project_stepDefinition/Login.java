@@ -41,7 +41,7 @@ public class Login {
 		driver.get("https://example.testproject.io/web/");
 	}
 	
-	@Then(value = "^Enter (.*) and (.*)$")
+	@Then(value = "Enter (.*) and (.*)")
 	public void enter_fullname_and_password(String fullname, String password) {
 		page1 = new Login_page(driver);
 		page1.id.sendKeys(fullname);
